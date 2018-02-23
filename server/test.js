@@ -1,4 +1,5 @@
 // Auth test
+// Run node test.js and it will return an error or your token
 
 authmadness({
   route:'signup', // customize options here signup, signin

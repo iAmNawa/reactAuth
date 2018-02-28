@@ -14,11 +14,11 @@ class Signup extends Component {
        </fieldset>
        <fieldset className="form-group">
         <label>Password:</label>
-        <input className="form-control" {...password} />
+        <input className="form-control" {...password} type="password"/>
        </fieldset>
        <fieldset className="form-group">
         <label>Confirm Password:</label>
-        <input className="form-control" {...passwordConfirm} />
+        <input className="form-control" {...passwordConfirm} type="password"/>
        </fieldset>
        <button action="submit" className="btn btn-primary">Sign up</button>
       </form>

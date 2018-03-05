@@ -23,7 +23,7 @@ class SignUp extends Component {
 
   handleFormSubmit({ email, password }) {
     // Sign user up
-    this.props.signUpUser({ email, password })
+    this.props.signupUser({ email, password })
   }
 
   render() {
@@ -68,4 +68,4 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps, actions)(reduxForm({
   form:'signup',
   validate
-})(SignUp));
+}, null)(SignUp));

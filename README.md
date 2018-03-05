@@ -33,9 +33,7 @@ The reason this file is not created when you clone the repo is because the .giti
 
 `git clone https://github.com/iAmNawa/reactAuth`
 
-should say what directory to run nmp i in
-
- `npm i` - install dependencies
+ `npm i` - install dependencies.  YOU MUST RUN `npm i` in both the server and reactFront directories!
 
 `npm run dev` - in server folder
 

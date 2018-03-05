@@ -24,10 +24,10 @@ make sure you are also running mongo with mongod, so you should have two servers
 
 localhost:8080 - root route
 
-localhost:8080/signup - signup for username here
+localhost:8080/signup - signup with email here
 
 localhost:8080/signin - sign in to your account here
 
-localhost:8080/feature - main feature... musy be authenticated to visit this route
+localhost:8080/feature - main feature... must be authenticated to visit this route
 
 localhost:8080/signout - will show after you logout

@@ -33,13 +33,13 @@ The reason this file is not created when you clone the repo is because the .giti
 
 `git clone https://github.com/iAmNawa/reactAuth`
 
- `npm i` - install dependencies.  YOU MUST RUN `npm i` in both the server and reactFront directories!
+`npm i` - install dependencies.  YOU MUST RUN `npm i` in both the server and reactFront directories!
+
+`mongod` - Type mongod anywhere on your computer to spin up a database.  If it says command not found, you must install mongo.  You can install it here https://www.mongodb.com/download-center
 
 `npm run dev` - in server folder
 
 `npm run start` - in reactFront folder
-
-`mongod` - Type mongod anywhere on your computer to spin up a database.  If it says command not found, you must install mongo.  You can install it here https://www.mongodb.com/download-center
 
 <localhost:8080> - root route
 

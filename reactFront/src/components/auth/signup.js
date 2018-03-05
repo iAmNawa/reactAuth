@@ -48,6 +48,10 @@ function validate(values) {
     errors.email = "Please enter an email"
   }
 
+  if ( !values.password ) {
+    errors.password = "Please enter a password"
+  }
+
   if (values.password != values.password_confirmation) {
     errors.password = 'Password and password confirmation don\'t match!'
   }

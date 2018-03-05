@@ -26,14 +26,29 @@ class SignUp extends Component {
     this.props.signupUser({ email, password })
   }
 
+  renderAlert() {
+    if (this.props.errorMessage) {
+      console.log('hello')
+      return (
+        <div className="alert alert-danger">
+         <strong>Oops!</strong> {this.props.errorMessage}
+        </div>
+      )
+    }
+  }
+
   render() {
     const { handleSubmit } = this.props;
 
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
-        <Field name="email" component={renderField} type="email" label="Email"/>
-        <Field name="password" component={renderField} type="password" label="Password"/>
-        <Field name="password_confirmation" component={renderField} type="password" label="Password Confirmation"/>
+        <div className="form-group">
+          <Field name="email" component={renderField} type="email" label="Email"/></div>
+        <div className="form-group">
+          <Field name="password" component={renderField} type="password" label="Password"/></div>
+        <div className="form-group">
+          <Field name="password_confirmation" component={renderField} type="password" label="Password Confirmation"/></div>
+        {this.renderAlert()}
         <button type="submit" className="btn btn-primary">Sign Up</button>
       </form>
     );

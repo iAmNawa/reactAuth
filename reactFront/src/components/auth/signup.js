@@ -44,6 +44,10 @@ function validate(values) {
   let errors = {}
   console.log(values)
 
+  if ( !values.email ) {
+    errors.email = "Please enter an email"
+  }
+
   if (values.password != values.password_confirmation) {
     errors.password = 'Password and password confirmation don\'t match!'
   }

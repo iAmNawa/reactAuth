@@ -18,8 +18,7 @@ front-end server - webpack-dev-server - npm run start in reactFront directory  -
 
 You must create a config.js file in the server directory and make your own secret.  Inside the config.js this is exactly what the file should look like.
 
-```// Hold application secrets and config
-
+```
 module.exports = {
   secret: 'YOURSECRETHERE'
 };

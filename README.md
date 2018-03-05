@@ -39,8 +39,7 @@ The reason this file is not created when you clone the repo is because the .giti
 
 `npm run start` - in reactFront folder
 
-make sure you are running mongo with mongod, so you should have two servers and one database running
-????? ^
+`mongod` - Type mongod anywhere on your computer to spin up a database.  If it says command not found, you must install mongo.  You can install it here https://www.mongodb.com/download-center
 
 <localhost:8080> - root route
 

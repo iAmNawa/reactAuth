@@ -14,6 +14,19 @@ front-end server - webpack-dev-server - npm run start in reactFront directory  -
 
   you tell me, Paul
 
+## NECESSARY
+
+You must create a config.js file in the server directory and make your own secret.  Inside the config.js this is exactly what the file should look like.
+
+// Hold application secrets and config
+module.exports = {
+  secret: 'YOURSECRETHERE'
+};
+
+You must change 'YOURSECRETHERE' to any random number of letters and numbers and that will be your local secret. *DO NOT SHARE WITH ANYONE*
+
+The reason this file is not created when you clone the repo is because the .gitignore tells git to ignore the file config.js.  This is to make everyone that uses this authentication system have a different secret. 
+
 ## Installation
 
 

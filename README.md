@@ -37,6 +37,10 @@ The reason this file is not created when you clone the repo is because the .giti
 
 `mongod` - Type mongod anywhere on your computer to spin up a database.  If it says command not found, you must install mongo.  You can install it here https://www.mongodb.com/download-center
 
+After downloading mongoDB you must run two commands to create the database.
+`mkdir -p /data/db` - This creates the database locally in /data/db
+``sudo chown -R `id -un` /data/db`` - This makes the root user have ownership of the database
+
 `npm run dev` - in server folder
 
 `npm run start` - in reactFront folder
